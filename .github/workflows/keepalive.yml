@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Curl Supabase
         run: |
-          curl -X GET "https://<YOUR_PROJECT_REF>.supabase.co/rest/v1/<YOUR_TABLE>" \
+          curl -X GET "https://qnroaigdrpqceasbqtmh.supabase.co/rest/v1/ping_table" \
             -H "apikey: ${{ secrets.SUPABASE_KEY }}" \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}"
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}" \
+            -H "Accept: application/json"
